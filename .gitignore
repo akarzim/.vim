@@ -1,5 +1,6 @@
 /bundle/*/
 /ftbundle/*/*/
 /vimfiles/
+/viminfo
 /log/
 /.netrwhist

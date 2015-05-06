@@ -14,12 +14,9 @@ runtime! config/**/*.vim
 
 
 set backspace=2
-set backup
-set backupdir=~/.vim/vimfiles/backup
 set clipboard+=unnamed
 set cmdheight=2
 set cpoptions-=<
-set directory=~/.vim/vimfiles/temp
 set fillchars=vert:\ ,stl:\ ,stlnc:\
 set formatoptions=tcroqn
 set iskeyword+=_,$,@,%,#,-
