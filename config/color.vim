@@ -1,7 +1,9 @@
 highlight Normal     guifg=gray guibg=black
 
 " delegate colorscheme configuration to config/color/<colorscheme>.vim files
-autocmd ColorScheme * execute 'runtime config/color/'. g:colors_name .'.vim'
+" autocmd ColorScheme * execute 'runtime config/color/'. g:colors_name .'.vim'
+let g:colors_name = "Elflord"
+let colors_name   = "Elflord"
 
 " highlight the maximum textwidth limit using a colored column
 set colorcolumn=+1
