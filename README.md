@@ -11,19 +11,13 @@ Branches
 
 * The **config** branch adds my personal configuration of standard Vim.
 
-* The **bundle** branch adds my chosen bundles and their configuration.
-
-Bundles
-
-* `**/*.get` specify the URLs of Git repositories to clone for your bundles.
-
-* `bundle/*/` and `ftbundle/*/*/` are your bundles, according to [Unbundle].
-
 Configuration
 
 * `config.vim` activates your bundles and then loads your Vim configuration.
 
 * `config/**/*.vim` is your Vim configuration, organized into files by topic.
+
+* `config/color/*.vim` are configurations for the matching Vim color schemes.
 
 ## Prerequisites
 
@@ -31,9 +25,7 @@ Configuration
 
 * [Git](http://git-scm.com/) 1.5 or newer
 
-* [POSIX sh](http://pubs.opengroup.org/onlinepubs/009695399/utilities/sh.html)ell
-
-[Unbundle]: https://github.com/sunaku/vim-unbundle
+* [vim-plug](https://github.com/junegunn/vim-plug) plugin manager
 
 ## Installing
 
@@ -52,65 +44,16 @@ Select a Git branch to use:
     cd ~/.vim
     git checkout master  # bare bones
     git checkout config  # bare bones + my config
-    git checkout bundle  # bare bones + my config + my bundles
 
-Install bundles from `*.get` files:
+Install plugins straight form Vim:
 
-    cd ~/.vim
-    sh bundle.sh
+    vi +PlugUpdate +qa
 
 ## Bundling
 
-Add bundle from *URL*:
-
-    cd ~/.vim
-    sh addnew.sh URL
-
-Add ftbundle for *FILETYPE* from *URL*:
-
-    cd ~/.vim
-    sh addnew.sh URL FILETYPE
-
-Remove bundle called *NAME* (regexp):
-
-    cd ~/.vim
-    sh remove.sh NAME
-
-Remove ftbundle for *FILETYPE* called *NAME* (regexp):
-
-    cd ~/.vim
-    sh remove.sh FILETYPE/NAME
-
-List bundles and ftbundles that lack corresponding `*.get` files:
-
-    cd ~/.vim
-    sh zombie.sh
-
-## Locking
-
-Lock a *BUNDLE* to a certain Git *COMMIT* to prevent it from being upgraded:
-
-    cd BUNDLE
-    git checkout COMMIT
-
-Unlock a locked *BUNDLE* so that it can be upgraded again:
-
-    cd BUNDLE
-    git checkout master
-
-## Upgrading
-
-Upgrade the configuration framework:
-
-    cd ~/.vim
-    sh rebase.sh
-
-Upgrade bundles from `*.get` files:
-
-    cd ~/.vim
-    sh bundle.sh
+Read the doc of [vim-plug](https://github.com/junegunn/vim-plug/blob/master/README.md) to learn how to manage plugins
 
 Do all this periodically via crontab(1):
 
-    @daily cd ~/.vim && sh rebase.sh && sh bundle.sh
+    @daily vi +PlugUpgrade +PlugUpdate +qa
 
