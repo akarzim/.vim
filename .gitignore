@@ -3,3 +3,7 @@
 /log/
 /.netrwhist
 /plugged/
+
+*.un~
+
+*.bak
