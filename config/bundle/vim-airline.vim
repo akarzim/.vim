@@ -17,3 +17,5 @@ let g:airline_powerline_fonts = 1
 " let g:airline_symbols.branch = '⭠'
 " let g:airline_symbols.readonly = '⭤'
 " let g:airline_symbols.linenr = '⭡'
+
+let g:airline#extensions#syntastic#enabled = 0

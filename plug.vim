@@ -5,12 +5,24 @@ Plug 'bling/vim-airline'
 Plug 'edsono/vim-matchit'
 Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'wakatime/vim-wakatime'
+
+" syntax
+function! InstallCheckers(info)
+  if a:info.status != 'unchanged' || a:info.force
+    !npm install -g jsonlint coffee coffeelint sass scsslint eslint jscs
+    !gem install rubocop
+  endif
+endfunction
+
+Plug 'scrooloose/syntastic', {
+            \ 'on': ['SyntasticCheck', 'SyntasticStatuslineFlag'],
+            \ 'for': ['sass', 'less', 'css', 'javascript', 'coffee', 'ruby', 'json'],
+            \ 'do': function('InstallCheckers') }
 
 " coffeescript
 Plug 'kchmck/vim-coffee-script'
