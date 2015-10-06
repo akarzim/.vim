@@ -1,6 +1,9 @@
-/bundle/*/
-/ftbundle/*/*/
 /vimfiles/
 /viminfo
 /log/
 /.netrwhist
+/plugged/
+
+*.un~
+
+*.bak
