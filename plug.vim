@@ -14,17 +14,8 @@ Plug 'junegunn/vim-easy-align'
 Plug 'wakatime/vim-wakatime'
 
 " syntax
-function! InstallCheckers(info)
-  if a:info.status != 'unchanged' || a:info.force
-    !npm install -g jsonlint coffee coffeelint sass scsslint eslint jscs
-    !gem install rubocop
-  endif
-endfunction
+Plug 'neomake/neomake'
 
-Plug 'scrooloose/syntastic', {
-            \ 'on': ['SyntasticCheck', 'SyntasticStatuslineFlag'],
-            \ 'for': ['sass', 'less', 'css', 'javascript', 'coffee', 'ruby', 'json'],
-            \ 'do': function('InstallCheckers') }
 
 " coffeescript
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }

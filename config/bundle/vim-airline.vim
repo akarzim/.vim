@@ -18,4 +18,4 @@ let g:airline_powerline_fonts = 1
 " let g:airline_symbols.readonly = '⭤'
 " let g:airline_symbols.linenr = '⭡'
 
-let g:airline#extensions#syntastic#enabled = 0
+let g:airline#extensions#neomake#enabled = 1
