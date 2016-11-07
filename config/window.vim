@@ -10,11 +10,11 @@ set splitbelow " focus new window after horizontal splitting
 " nnoremap <Leader>3 <C-W>v
 
 " collapse other windows
-nnoremap <Leader>0 <C-W><Bar><C-W>_
+nnoremap <Leader>+ <C-W><Bar><C-W>_
 
 " all windows equal size
-nnoremap <Leader>9 <C-W>=
-" ... also on vim resize
+nnoremap <Leader>= <C-W>=
+" …also on Vim resize
 autocmd VimResized * execute "normal \<C-W>="
 
 " close other windows
