@@ -25,22 +25,22 @@ Plug 'scrooloose/syntastic', {
             \ 'do': function('InstallCheckers') }
 
 " coffeescript
-Plug 'kchmck/vim-coffee-script'
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
 
 " haml
-Plug 'tpope/vim-haml'
+Plug 'tpope/vim-haml', { 'for': 'html' }
 
 " jade
-Plug 'digitaltoad/vim-jade'
+Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
 
 " javascript
 Plug 'Shutnik/jshint2.vim'
-Plug 'jiangmiao/simple-javascript-indenter'
-Plug 'moll/vim-node'
-Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'jiangmiao/simple-javascript-indenter',   { 'for': 'javascript' }
+Plug 'moll/vim-node',                          { 'for': 'javascript' }
+Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
 
 " less
-Plug 'groenewege/vim-less'
+Plug 'groenewege/vim-less', { 'for': 'less' }
 
 " markdown
 function! BuildComposer(info)
@@ -53,17 +53,17 @@ endfunction
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 
 " python
-Plug 'vim-scripts/pylint.vim'
+Plug 'vim-scripts/pylint.vim', { 'for': 'python' }
 
 " ruby
+Plug 'tpope/vim-bundler',   { 'for': 'ruby' }
+Plug 'tpope/vim-endwise',   { 'for': 'ruby' }
+Plug 'tpope/vim-rails',     { 'for': 'ruby' }
+Plug 'tpope/vim-rake',      { 'for': 'ruby' }
+Plug 'ngmy/vim-rubocop',    { 'for': 'ruby' }
 Plug 'kana/vim-textobj-user' | Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'ngmy/vim-rubocop'
-Plug 'tpope/vim-bundler'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-rake'
 
 " slim
-Plug 'slim-template/vim-slim'
+Plug 'slim-template/vim-slim', { 'for': 'slim' }
 
 call plug#end()
