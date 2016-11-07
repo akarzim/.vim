@@ -2,7 +2,6 @@ call plug#begin()
 
 " bundles
 Plug 'bling/vim-airline'
-Plug 'edsono/vim-matchit'
 Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-abolish'
@@ -34,7 +33,6 @@ Plug 'tpope/vim-haml', { 'for': 'html' }
 Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
 
 " javascript
-Plug 'Shutnik/jshint2.vim'
 Plug 'jiangmiao/simple-javascript-indenter',   { 'for': 'javascript' }
 Plug 'moll/vim-node',                          { 'for': 'javascript' }
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
@@ -43,14 +41,6 @@ Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
 Plug 'groenewege/vim-less', { 'for': 'less' }
 
 " markdown
-function! BuildComposer(info)
-  if a:info.status != 'unchanged' || a:info.force
-    !cargo build --release
-    UpdateRemotePlugins
-  endif
-endfunction
-
-Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 
 " python
 Plug 'vim-scripts/pylint.vim', { 'for': 'python' }
