@@ -1,3 +1,2 @@
-" swap backslash with comma (used as <Leader> key in shortcuts)
-let mapleader=','
-noremap \ ,
+" use space as <Leader> key
+let mapleader=' '
