@@ -1,7 +1,8 @@
 call plug#begin()
 
 " bundles
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-vinegar'

@@ -15,7 +15,7 @@ runtime! config/**/*.vim
 
 set backspace=2
 set clipboard+=unnamed
-set cmdheight=2
+set cmdheight=1
 set cpoptions-=<
 set fillchars=vert:\ ,stl:\ ,stlnc:\
 set formatoptions=tcroqn
