@@ -16,6 +16,9 @@ Plug 'wakatime/vim-wakatime'
 " syntax
 Plug 'neomake/neomake'
 
+" complete
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'fishbullet/deoplete-ruby'
 
 " coffeescript
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
