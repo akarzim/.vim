@@ -43,6 +43,7 @@ Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
 Plug 'groenewege/vim-less', { 'for': 'less' }
 
 " markdown
+Plug 'junegunn/limelight.vim', { 'for': 'markdown' }
 
 " python
 Plug 'vim-scripts/pylint.vim', { 'for': 'python' }
