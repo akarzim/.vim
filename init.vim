@@ -1,0 +1,1 @@
+/Users/geophyle/.config/nvim/config.vim

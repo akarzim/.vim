@@ -7,6 +7,7 @@ set directory=~/.vim/vimfiles/temp//
 
 " viminfo stores the state of your previous editing session
 set viminfo+=n~/.vim/viminfo
+set shada='1000,n~/.vim/shada
 
 if exists("+undofile")
   " undofile - This allows you to use undos after exiting and restarting

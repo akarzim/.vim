@@ -56,3 +56,6 @@ autocmd BufReadPost *
 autocmd BufWrite * silent! %s/[\r \t]\+$//
 
 let g:closetag_html_style=1
+
+let g:python_host_prog='/usr/local/bin/python'
+let g:python3_host_prog='/usr/local/bin/python3'
