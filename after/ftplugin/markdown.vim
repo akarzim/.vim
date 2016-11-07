@@ -20,3 +20,5 @@ let g:markdown_fenced_languages = ['ruby', 'vim', 'bash=sh', 'sh']
 
 " format current line as a second-level heading in markdown (uses `z marker)
 " nmap <Leader>+ mzyypVr-:.+1g/^-\+/d<Return>`z
+
+" autocmd! FileType markdown :Goyo
