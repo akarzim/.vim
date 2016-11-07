@@ -40,10 +40,10 @@ set wildignore+=*.bmp,*.gif,*.jpg,*.jpeg,*.JPG,*.png,*.GIF,*.bmp,*.BMP,*.JPEG,*.
 " map <F9> :%s/^\d/,&<CR><C-O>qaD3@="3)P0D"<CR>6(p+q9@aVGgJZZ
 
 " Toggle line numbers and fold column for easy copying:
-nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
+" nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 " Toggle relative line numbers
-nnoremap <F3> :set relativenumber<CR>
+" nnoremap <F3> :set relativenumber<CR>
 
 " When editing a file, always jump to the last known cursor position.
 " Don't do it when the position is invalid or when inside an event handler
