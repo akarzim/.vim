@@ -34,7 +34,7 @@ set statusline=%F%m%r%h%w%10{getfsize(expand('%'))}o\ \ \ [FORMAT=%{&ff}]\ [TYPE
 set t_Co=256
 set tags+=gems.tags
 set wildcharm=<C-Z>
-set wildignore+=*.bmp,*.gif,*.jpg,*.jpeg,*.JPG,*.png,*.GIF,*.bmp,*.BMP,*.JPEG,*.doc,*.xls,*.ppt,*.DOC,*.XLS,*.PPT,tmp/*,*.pdf,*.PDF,public/*,*.ico
+set wildignore=*.pyc,.DS_Store
 
 "map <F9> :emenu <C-Z>
 " map <F9> :%s/^\d/,&<CR><C-O>qaD3@="3)P0D"<CR>6(p+q9@aVGgJZZ

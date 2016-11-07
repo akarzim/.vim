@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'bling/vim-airline'
 Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
+Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
