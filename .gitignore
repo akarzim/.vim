@@ -1,9 +1,9 @@
 /vimfiles/
 /viminfo
+/shada
 /log/
 /.netrwhist
 /plugged/
-
 *.un~
-
 *.bak
+/spell/*
