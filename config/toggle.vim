@@ -8,4 +8,5 @@ nnoremap <Leader>tz :setlocal foldenable!<Return>
 nnoremap <Leader>tc :setlocal cursorcolumn!<Return>
 nnoremap <Leader>tC :setlocal cursorline!<Return>
 nnoremap <Leader>tw :setlocal wrap! wrap?<CR>
-nnoremap <Leader>th :setlocal Limelight!<Return>
+nnoremap <Leader>th :Limelight!!<Return>
+nnoremap <Leader>to :Goyo<Return>
