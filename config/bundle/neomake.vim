@@ -9,11 +9,21 @@
 " let g:neomake_ruby_enabled_makers       = ['mri', 'rubocop', 'reek']
 let g:neomake_ruby_enabled_makers       = ['mri', 'rubocop']
 
-augroup my_error_signs
-    au!
-    autocmd ColorScheme * hi NeomakeErrorSign ctermfg=red
-    autocmd ColorScheme * hi NeomakeWarningSign ctermfg=yellow
-    autocmd ColorScheme * hi NeomakeMessageSign ctermfg=blue
-augroup END
+function! neomake#makers#ft#ruby#RubocopEntryProcess(entry)
+    if a:entry.type ==# 'F'
+        let a:entry.type = 'E'
+    elseif a:entry.type ==# 'R'
+        let a:entry.type = 'M'
+    elseif a:entry.type ==# 'C'
+        let a:entry.type = 'I'
+    elseif a:entry.type !=# 'W' && a:entry.type !=# 'E'
+        let a:entry.type = 'W'
+    endif
+endfunction
+
+let g:neomake_error_sign =   { 'text': '●', 'texthl': 'GruvboxRedSign' }
+let g:neomake_warning_sign = { 'text': '◇', 'texthl': 'GruvboxYellowSign' }
+let g:neomake_info_sign =    { 'text': '◎', 'texthl': 'GruvboxBlueSign' }
+let g:neomake_message_sign = { 'text': '○', 'texthl': 'GruvboxPurpleSign' }
 
 autocmd! BufWritePost * Neomake
