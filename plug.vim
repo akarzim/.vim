@@ -8,11 +8,14 @@ Plug 'rking/ag.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'andrewradev/splitjoin.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'wakatime/vim-wakatime'
+
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 " syntax
 Plug 'neomake/neomake'
