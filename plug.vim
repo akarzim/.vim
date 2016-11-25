@@ -12,6 +12,7 @@ Plug 'tpope/vim-surround'
 Plug 'andrewradev/splitjoin.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'wakatime/vim-wakatime'
+Plug 'mhinz/vim-startify'
 
 " Git
 Plug 'tpope/vim-fugitive'
