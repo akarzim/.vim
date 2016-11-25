@@ -1,7 +1,6 @@
-setlocal nospell
-setlocal spelllang=fr,en
-setlocal spellfile=$HOME/.vim/spell/fr.utf-8.add,$HOME/.vim/spell/en.utf-8.add
-
+set spelllang=fr,en
+set spellfile=$HOME/.vim/spell/fr.utf-8.add,$HOME/.vim/spell/en.utf-8.add
+set nospell
 
 nnoremap <Leader>zn ]s
 nnoremap <Leader>zN G[s

@@ -25,7 +25,6 @@ set linespace=0
 set makeef=error.err
 set mouse=a
 set mousemodel=popup    " autorise le menu popup avec la souris
-set nospell
 set number
 set pastetoggle=<F10>
 set ruler
