@@ -11,3 +11,4 @@ nnoremap <Leader>tw :setlocal wrap! wrap?<CR>
 nnoremap <Leader>th :Limelight!!<Return>
 nnoremap <Leader>to :Goyo<Return>
 nnoremap <Leader>tu :UndotreeToggle<Return>
+nnoremap <expr> <Leader>tb ':setlocal background=' . ((&background == 'dark') ? 'light<CR>' : 'dark<CR>')

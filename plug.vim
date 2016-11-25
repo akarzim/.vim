@@ -15,6 +15,9 @@ Plug 'wakatime/vim-wakatime'
 Plug 'mhinz/vim-startify'
 Plug 'mbbill/undotree'
 
+" colorscheme
+Plug 'morhetz/gruvbox'
+
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
