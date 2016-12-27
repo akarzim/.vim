@@ -54,7 +54,7 @@ Plug 'junegunn/limelight.vim', { 'for': 'markdown' }
 Plug 'vim-scripts/pylint.vim', { 'for': 'python' }
 
 " ruby
-Plug 'vim-ruby/vim-ruby',   { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-bundler',   { 'for': 'ruby' }
 Plug 'tpope/vim-endwise',   { 'for': 'ruby' }
 Plug 'tpope/vim-rails',     { 'for': 'ruby' }
