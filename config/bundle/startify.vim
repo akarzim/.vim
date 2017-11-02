@@ -1,4 +1,6 @@
 let g:startify_change_to_vcs_root = 1
+let g:startify_fortune_use_unicode = 1
+let g:startify_update_oldfiles = 1
 
 let g:startify_list_order = [
         \ ['   MRU ' . getcwd()], 'dir',
@@ -14,6 +16,7 @@ let g:startify_bookmarks = [
     \ { 's': '~/.vim/config/bundle/startify.vim' },
     \ { 'r': '~/dev/synbioz/.rubocop.yml' },
     \ { 'z': '~/.zshrc' },
+    \ { 'g': '~/.zplug/packages.zsh' },
     \ ]
 
 let g:startify_commands = [
