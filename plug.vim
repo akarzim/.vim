@@ -50,8 +50,8 @@ Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
 Plug 'groenewege/vim-less', { 'for': 'less' }
 
 " markdown
-Plug 'junegunn/goyo.vim',      { 'for': 'markdown' }
-Plug 'junegunn/limelight.vim', { 'for': 'markdown' }
+Plug 'junegunn/goyo.vim',      { 'for': ['markdown', 'asciidoc'] }
+" Plug 'junegunn/limelight.vim', { 'for': ['markdown', 'asciidoc'] }
 
 " python
 Plug 'vim-scripts/pylint.vim', { 'for': 'python' }
