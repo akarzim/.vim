@@ -69,4 +69,7 @@ Plug 'kana/vim-textobj-user' | Plug 'nelstrom/vim-textobj-rubyblock'
 " slim
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
 
+" gpg
+Plug 'jamessan/vim-gnupg'
+
 call plug#end()
