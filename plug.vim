@@ -15,6 +15,7 @@ Plug 'andrewradev/splitjoin.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'wakatime/vim-wakatime'
 Plug 'mhinz/vim-startify'
+" Plug 'sjl/gundo.vim'
 Plug 'mbbill/undotree'
 
 " colorscheme
