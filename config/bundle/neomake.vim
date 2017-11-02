@@ -7,6 +7,7 @@
 " let g:neomake_json_enabled_makers       = ['jsonlint']
 " let g:neomake_html_enabled_makers       = ['tidy', 'htmlhint']
 " let g:neomake_ruby_enabled_makers       = ['mri', 'rubocop', 'reek']
+let g:neomake_javascript_enabled_makers = ['jshint', 'eslint']
 let g:neomake_ruby_enabled_makers       = ['mri', 'rubocop']
 
 function! neomake#makers#ft#ruby#RubocopEntryProcess(entry)
