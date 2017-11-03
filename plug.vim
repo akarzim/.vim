@@ -26,7 +26,8 @@ Plug 'tpope/vim-rhubarb'
 " syntax
 Plug 'neomake/neomake'
 Plug 'vim-scripts/SyntaxRange' " asciidoc code highlighting
-Plug 'dpelle/vim-Grammalecte'
+" Plug 'dpelle/vim-Grammalecte'
+Plug 'akarzim/vim-Grammalecte', { 'branch': 'toggle-grammalecte' }
 
 " complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

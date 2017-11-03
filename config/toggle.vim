@@ -23,3 +23,4 @@ nnoremap <Leader>tu :UndotreeToggle<Return>
 nnoremap <expr> <Leader>tb ':setlocal background=' . ((&background == 'dark') ? 'light<CR>' : 'dark<CR>')
 " nnoremap <Leader>tq :cwindow<Return>
 " nnoremap <Leader>tl :lwindow<Return>
+nnoremap <Leader>tg :Grammalecte<Return>
