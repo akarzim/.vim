@@ -29,25 +29,56 @@ Configuration
 
 ## Installing
 
-Backup your configuration:
+### Backup your configuration
 
-    mv ~/.vim ~/.vim.bak
-    mv ~/.vimrc ~/.vimrc.bak
+For Vim:
 
-Install this configuration:
+```sh
+mv ~/.vim ~/.vim.bak
+mv ~/.vimrc ~/.vimrc.bak
+```
 
-    git clone git://github.com/akarzim/.vim.git ~/.vim
-    ln -s ~/.vim/config.vim ~/.vimrc
+For NeoVim:
 
-Select a Git branch to use:
+```sh
+mv ~/.nvim ~/.nvim.bak
+mv ~/.nvimrc ~/.nvimrc.bak
+mv ~/.config/nvim ~/.config/nvim.bak
+```
 
-    cd ~/.vim
-    git checkout master  # bare bones
-    git checkout config  # bare bones + my config
+### Install this configuration
 
-Install plugins straight form Vim:
+```sh
+git clone git://github.com/akarzim/.vim.git ~/git/vim
+```
 
-    vi +PlugUpdate +qa
+For Vim:
+
+```sh
+ln -s ~/git/vim/ ~/.vim
+ln -s ~/git/vim/config.vim ~/.vimrc
+```
+
+For NeoVim:
+
+```sh
+ln -s ~/git/vim ~/.config/nvim
+ln -s ~/git/vim/config.vim ~/.nvimrc    
+```
+
+### Select a Git branch to use
+
+```sh
+cd ~/.vim
+git checkout master  # bare bones
+git checkout config  # bare bones + my config
+```
+
+### Install plugins straight form Vim
+
+```sh
+vi +PlugUpdate +qa
+```
 
 ## Bundling
 
@@ -55,5 +86,6 @@ Read the doc of [vim-plug](https://github.com/junegunn/vim-plug/blob/master/READ
 
 Do all this periodically via crontab(1):
 
-    @daily vi +PlugUpgrade +PlugUpdate +qa
-
+```
+@daily vi +PlugUpgrade +PlugUpdate +qa
+```
