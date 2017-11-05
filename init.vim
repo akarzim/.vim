@@ -1,1 +1,1 @@
-/Users/geophyle/.config/nvim/config.vim
+config.vim
