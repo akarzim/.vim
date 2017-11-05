@@ -3,6 +3,7 @@ let &t_ZR="\e[23m"            " italics end
 let &t_Co=256                 " number of colors
 
 set termguicolors
+set background=dark
 colorscheme gruvbox
 
 
