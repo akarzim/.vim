@@ -6,5 +6,6 @@
 /plugged/
 *.un~
 *.bak
+*.old
 /spell/*
 /tags
