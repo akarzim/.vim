@@ -30,7 +30,14 @@ Plug 'vim-scripts/SyntaxRange' " asciidoc code highlighting
 Plug 'akarzim/vim-Grammalecte', { 'branch': 'toggle-grammalecte' }
 
 " complete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
 Plug 'fishbullet/deoplete-ruby'
 
 " coffeescript
