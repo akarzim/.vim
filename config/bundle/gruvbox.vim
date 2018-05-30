@@ -8,3 +8,6 @@ let g:gruvbox_guisp_fallback="fg"
 "   autocmd ColorScheme * hi link markdownCodeBlock GruvboxBlue
 "   autocmd ColorScheme * hi link markdownCodeDelimiter GruvboxBlue
 " augroup END
+
+autocmd ColorScheme * hi! link NonText GruvboxPurple
+autocmd ColorScheme * hi! link SpecialKey GruvboxPurple
