@@ -43,6 +43,9 @@ Plug 'fishbullet/deoplete-ruby'
 " coffeescript
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
 
+" gpg
+Plug 'akarzim/vim-decode-qp', { 'for': 'asc' }
+
 " haml
 Plug 'tpope/vim-haml', { 'for': 'html' }
 
