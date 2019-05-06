@@ -11,6 +11,7 @@ let g:startify_list_order = [
         \ ]
 
 let g:startify_bookmarks = [
+    \ { 'a': '~/.vim/after/plugin/abolish.vim' },
     \ { 'c': '~/.vim/config.vim' },
     \ { 'p': '~/.vim/plug.vim' },
     \ { 's': '~/.vim/config/bundle/startify.vim' },
