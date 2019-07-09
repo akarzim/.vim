@@ -1,4 +1,4 @@
-nnoremap <Leader>dD :diffoff<Return>
+nnoremap <Leader>do :diffoff<Return>
 nnoremap <Leader>dd :diffupdate<Return>
 nnoremap <Leader>dt :diffthis<Return>
 nnoremap <Leader>dT :DiffOrig<Return>
