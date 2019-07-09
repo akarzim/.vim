@@ -5,5 +5,9 @@ set guicursor+=a:blinkwait0 " disable cursor blink in gvim
 set guioptions-=r           " disable right scrollbar
 set guioptions-=L           " disable left scrollbar
 set guioptions-=T
-set guifont=Tamzen\ 11,Tamsyn\ 11,Monospace\ 9,Terminus\ 8
+
+if !has('nvim')
+  set guifont=Fira\ Code\ 12,Monospace\ 9,Terminus\ 8
+endif
+
 set linespace=0             " Number of pixel lines inserted between characters
