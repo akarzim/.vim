@@ -23,6 +23,9 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 
+" ctags
+Plug 'ludovicchabant/vim-gutentags'
+
 " syntax
 Plug 'neomake/neomake'
 Plug 'vim-scripts/SyntaxRange' " asciidoc code highlighting
