@@ -27,8 +27,8 @@ Plug 'tpope/vim-rhubarb'
 Plug 'ludovicchabant/vim-gutentags'
 
 " syntax
+Plug 'sheerun/vim-polyglot'
 Plug 'neomake/neomake'
-Plug 'vim-scripts/SyntaxRange' " asciidoc code highlighting
 " Plug 'dpelle/vim-Grammalecte'
 Plug 'akarzim/vim-Grammalecte', { 'branch': 'toggle-grammalecte' }
 
@@ -43,35 +43,14 @@ endif
 
 Plug 'fishbullet/deoplete-ruby'
 
-" coffeescript
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
-
 " gpg
 Plug 'akarzim/vim-decode-qp', { 'for': 'asc' }
-
-" haml
-Plug 'tpope/vim-haml', { 'for': 'html' }
-
-" jade
-Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
-
-" javascript
-Plug 'jiangmiao/simple-javascript-indenter',   { 'for': 'javascript' }
-Plug 'moll/vim-node',                          { 'for': 'javascript' }
-Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
-
-" less
-Plug 'groenewege/vim-less', { 'for': 'less' }
 
 " markdown
 Plug 'junegunn/goyo.vim',      { 'for': ['markdown', 'asciidoc'] }
 " Plug 'junegunn/limelight.vim', { 'for': ['markdown', 'asciidoc'] }
 
-" python
-Plug 'vim-scripts/pylint.vim', { 'for': 'python' }
-
 " ruby
-Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-bundler',   { 'for': 'ruby' }
 Plug 'tpope/vim-endwise',   { 'for': 'ruby' }
 Plug 'tpope/vim-rails',     { 'for': 'ruby' }
@@ -79,9 +58,6 @@ Plug 'tpope/vim-rake',      { 'for': 'ruby' }
 Plug 'ngmy/vim-rubocop',    { 'for': 'ruby' }
 Plug 'noprompt/vim-yardoc', { 'for': 'ruby' }
 Plug 'kana/vim-textobj-user' | Plug 'nelstrom/vim-textobj-rubyblock'
-
-" slim
-Plug 'slim-template/vim-slim', { 'for': 'slim' }
 
 " gpg
 Plug 'jamessan/vim-gnupg'
