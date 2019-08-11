@@ -7,6 +7,7 @@
 "   \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
 "   \ 'hl+':     ['fg', 'Statement'],
 "   \ 'info':    ['fg', 'PreProc'],
+"   \ 'border':  ['fg', 'Ignore'],
 "   \ 'prompt':  ['fg', 'Conditional'],
 "   \ 'pointer': ['fg', 'Exception'],
 "   \ 'marker':  ['fg', 'Keyword'],
@@ -35,11 +36,16 @@ let g:fzf_tags_command = 'ctags -R -f ./.git/tags .'
 " --follow: Follow symlinks
 " --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 " --color: Search color options
-command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
-
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
+  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+  \   <bang>0 ? fzf#vim#with_preview('up:60%')
+  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \   <bang>0)
+
+command! -bang -nargs=* VRg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(expand("<cword>")), 1,
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
@@ -47,3 +53,4 @@ command! -bang -nargs=* Rg
 nnoremap <Leader>ff :Files<Return>
 nnoremap <Leader>fr :Rg<Return>
 nnoremap <Leader>fR :Rg!<Return>
+nnoremap <Leader>fv :VRg<Return>
