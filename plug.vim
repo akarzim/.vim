@@ -10,6 +10,7 @@ Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-speeddating'
 Plug 'andrewradev/splitjoin.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'mhinz/vim-startify'
@@ -43,9 +44,6 @@ endif
 
 Plug 'fishbullet/deoplete-ruby'
 
-" gpg
-Plug 'akarzim/vim-decode-qp', { 'for': 'asc' }
-
 " markdown
 Plug 'junegunn/goyo.vim',      { 'for': ['markdown', 'asciidoc'] }
 " Plug 'junegunn/limelight.vim', { 'for': ['markdown', 'asciidoc'] }
@@ -60,6 +58,7 @@ Plug 'noprompt/vim-yardoc', { 'for': 'ruby' }
 Plug 'kana/vim-textobj-user' | Plug 'nelstrom/vim-textobj-rubyblock'
 
 " gpg
+Plug 'akarzim/vim-decode-qp', { 'for': 'asc' }
 Plug 'jamessan/vim-gnupg'
 
 call plug#end()
