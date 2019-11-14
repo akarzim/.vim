@@ -1,4 +1,7 @@
-call plug#begin()
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin(stdpath('data') . '/plugged')
 
 " bundles
 Plug 'vim-airline/vim-airline'
