@@ -1,3 +1,7 @@
+if !exists("g:deoplete")
+  finish
+fi
+
 let g:deoplete#enable_at_startup = 1
 
 call deoplete#custom#option('on_insert_enter', v:false)

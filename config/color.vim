@@ -4,7 +4,7 @@ let &t_Co=256                 " number of colors
 
 set termguicolors
 set background=dark
-colorscheme gruvbox
+silent! colorscheme gruvbox
 
 
 let g:terminal_color_0  = '#2e3436'
