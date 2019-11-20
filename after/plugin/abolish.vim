@@ -5,6 +5,7 @@ if !exists(":Abolish")
 endif
 
 Abolish adatper{,s} adapter{}
+Abolish docmuent{,s} document{}
 Abolish opeart{e,es,ed,ing,ion} operat{}
 Abolish purcahse{,s} purchase{}
 Abolish udpat{e,es,ed,ing} updat{}
