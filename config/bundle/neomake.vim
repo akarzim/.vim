@@ -1,5 +1,8 @@
 " let g:neomake_logfile = '/tmp/neomake.log'
 
+let g:neomake_javascript_eslint_maker = { 'exe': '/usr/local/Cellar/node/12.10.0/bin/eslint' }
+let g:neomake_javascript_jshint_maker = { 'exe': '/usr/local/Cellar/node/12.10.0/bin/jshint' }
+
 " let g:neomake_coffee_enabled_makers     = ['coffeelint']
 " let g:neomake_scss_enabled_makers       = ['sasslint', 'scsslint']
 " let g:neomake_slim_enabled_makers       = ['slimlint']
