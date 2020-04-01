@@ -15,7 +15,7 @@ let g:startify_bookmarks = [
     \ { 'c': '~/.vim/config.vim' },
     \ { 'p': '~/.vim/plug.vim' },
     \ { 's': '~/.vim/config/bundle/startify.vim' },
-    \ { 'r': '~/dev/synbioz/.rubocop.yml' },
+    \ { 'r': '~/.rubocop.yml' },
     \ { 'z': '~/.zshrc' },
     \ { 'g': '~/.zplug/packages.zsh' },
     \ ]
