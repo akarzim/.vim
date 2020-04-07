@@ -12,12 +12,13 @@ let g:startify_list_order = [
 
 let g:startify_bookmarks = [
     \ { 'a': '~/.vim/after/plugin/abolish.vim' },
-    \ { 'c': '~/.vim/config.vim' },
-    \ { 'p': '~/.vim/plug.vim' },
-    \ { 's': '~/.vim/config/bundle/startify.vim' },
+    \ { 'g': '~/.gitconfig' },
+    \ { 'k': '~/.zplug/packages.zsh' },
+    \ { 'l': '~/.vim/plug.vim' },
     \ { 'r': '~/.rubocop.yml' },
+    \ { 's': '~/.vim/config/bundle/startify.vim' },
+    \ { 'v': '~/.vim/config.vim' },
     \ { 'z': '~/.zshrc' },
-    \ { 'g': '~/.zplug/packages.zsh' },
     \ ]
 
 let g:startify_commands = [
