@@ -50,6 +50,7 @@ command! -bang -nargs=* VRg
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
 
+nnoremap <Leader>fb :Buffers<Return>
 nnoremap <Leader>ff :Files<Return>
 nnoremap <Leader>fr :Rg<Return>
 nnoremap <Leader>fR :Rg!<Return>
