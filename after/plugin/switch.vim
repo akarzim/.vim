@@ -6,14 +6,7 @@ autocmd FileType ruby let b:switch_no_builtins = 1
 autocmd FileType ruby let b:switch_custom_definitions =
     \ [
     \   g:switch_builtins.ruby_hash_style,
-    \  {
-    \     '\v\{(\s*:(\k|["''])+\s*\=\>\s*[^,]+\s*,?)*}': {
-    \       ':\(\%\(\k\|["'']\)\+\)\s*=>': '\1:',
-    \     },
-    \     '\v\{(\s*(\k|["''])+:\s*[^,]+,?)*\s*}': {
-    \       '\(\%\(\k\|["'']\)\+\):': ':\1 =>',
-    \     },
-    \   },
+    \   g:switch_builtins.ruby_oneline_hash,
     \   g:switch_builtins.ruby_lambda,
     \   g:switch_builtins.rspec_expect,
     \   g:switch_builtins.rspec_to,
