@@ -12,8 +12,8 @@ let g:startify_list_order = [
 
 let g:startify_bookmarks = [
     \ { 'a': '~/.vim/after/plugin/abolish.vim' },
+    \ { 'c': '~/.zplug/packages.zsh' },
     \ { 'g': '~/.gitconfig' },
-    \ { 'k': '~/.zplug/packages.zsh' },
     \ { 'l': '~/.vim/plug.vim' },
     \ { 'r': '~/.rubocop.yml' },
     \ { 's': '~/.vim/config/bundle/startify.vim' },
