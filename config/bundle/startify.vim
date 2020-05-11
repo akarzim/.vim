@@ -33,7 +33,8 @@ let g:startify_commands = [
 
 let s:tips_dirpath = expand('<sfile>:p:h')
 let g:startify_custom_header_quotes = [
-      \ {-> systemlist(s:tips_dirpath . '/fortunes/pragmatic_programmer.tip.rb') }
+      \ {-> systemlist(s:tips_dirpath . '/fortunes/pragmatic_programmer.tip.rb') },
+      \ {-> systemlist(s:tips_dirpath . '/fortunes/practical_vim.tip.rb') }
       \ ]
 
 let g:startify_custom_header = eval('startify#pad(startify#fortune#boxed())') + ['']
