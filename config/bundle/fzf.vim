@@ -55,3 +55,9 @@ nnoremap <Leader>ff :Files<Return>
 nnoremap <Leader>fr :Rg<Return>
 nnoremap <Leader>fR :Rg!<Return>
 nnoremap <Leader>fv :VRg<Return>
+
+" Path completion with custom source command
+inoremap <expr> <c-x><c-f> fzf#vim#complete#path('fd')
+
+" Word completion with custom spec with popup layout option
+inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'window': { 'width': 0.2, 'height': 0.9, 'xoffset': 1 }})
