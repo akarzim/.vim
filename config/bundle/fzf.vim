@@ -15,9 +15,6 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 " [Files] Extra options for fzf
-"         e.g. File preview using coderay (http://coderay.rubychan.de/)
-let g:fzf_files_options =
-	\ '--preview "(coderay {} || cat {}) 2> /dev/null | head -'.&lines.'"'
 
 " [Tags] Command to generate tags file
 let g:fzf_tags_command = 'ctags -R -f ./.git/tags .'
@@ -49,6 +46,9 @@ command! -bang -nargs=* VRg
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
+
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 nnoremap <Leader>fb :Buffers<Return>
 nnoremap <Leader>ff :Files<Return>
