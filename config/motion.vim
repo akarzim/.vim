@@ -15,3 +15,6 @@ nnoremap <silent> j :<C-U>execute 'normal!' (v:count>1 ? "m'".v:count.'j' : 'gj'
 " apply these tricks to up and down arrow keys
 nmap <Up> k
 nmap <Down> j
+
+" remap caret deadkey to tick
+nmap ' ^
