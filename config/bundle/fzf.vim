@@ -22,6 +22,7 @@ let g:fzf_tags_command = 'ctags -R -f ./.git/tags .'
 " Mapping selecting mappings
 " nmap <leader><tab> <plug>(fzf-maps-n)
 
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
 
 " --column: Show column number
 " --line-number: Show line number
