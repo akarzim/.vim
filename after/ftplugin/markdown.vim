@@ -18,6 +18,7 @@ set formatoptions+=ro
 "   b	Blank (<Space>, <Tab> or <EOL>) required after {string}.
 set comments=b:*,b:-,b:+,b:1.,n:>
 
+let g:vim_markdown_frontmatter = 1
 let g:markdown_fenced_languages = ['ruby', 'vim', 'bash=sh', 'sh', 'sql']
 
 " insert a code-block paragraph
