@@ -16,10 +16,18 @@ set formatoptions+=ro
 " {flags}:
 "   n	Nested comment.  Nesting with mixed parts is allowed.
 "   b	Blank (<Space>, <Tab> or <EOL>) required after {string}.
-set comments=b:*,b:-,b:+,b:1.,n:>
+set comments=n:>
+set comments+=b:*\ [\ ],b:-\ [\ ],b:+\ [\ ],b:1.\ [\ ]
+set comments+=b:*\ [x],b:-\ [x],b:+\ [x],b:1.\ [x]
+set comments+=b:*\ [-],b:-\ [-],b:+\ [-],b:1.\ [-]
+set comments+=b:*,b:-,b:+,b:1.,n:>
 
-let g:vim_markdown_frontmatter = 1
-let g:markdown_fenced_languages = ['ruby', 'vim', 'bash=sh', 'sh', 'sql']
+" multiline list item
+inoremap <buffer><silent> <S-CR> <CR><ESC>:normal v^r<Space><CR>A<Space>
 
 " insert a code-block paragraph
-inoremap <buffer> § ~~~<CR><CR>~~~<Up>
+inoremap <buffer><silent> § ~~~<Enter>~~~<C-o>k<C-o>A
+
+" indent a list item
+inoremap <buffer><silent> <TAB> <C-o>>><C-o>A
+inoremap <buffer><silent> <S-TAB> <C-o><<<C-o>A
