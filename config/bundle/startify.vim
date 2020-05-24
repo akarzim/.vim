@@ -24,6 +24,7 @@ let g:startify_bookmarks = [
 let g:startify_commands = [
     \ { '!': ['Reload', 'so $MYVIMRC | Startify'] },
     \ { 'h': 'CheckHealth' },
+    \ { 'm': ['Mail', 'e /tmp/draft.eml'] },
     \ { 't': 'Tutor' },
     \ { 'pi': 'PlugInstall' },
     \ { 'pc': 'PlugClean' },
