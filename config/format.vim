@@ -14,3 +14,15 @@ set expandtab        " insert spaces when <TAB> is pressed
 set softtabstop=2    " ... this many spaces
 set shiftwidth=2     " indentation amount for < and > commands
 set backspace=2      " remove this many spaces when <BS> is pressed
+
+" format SQL
+if executable('sqlformat')
+  vnoremap <leader>sql :'<,'>!sqlformat - -r -s -k upper<CR>
+  nnoremap <leader>sql :%!sqlformat - -r -s -k upper<CR>
+endif
+
+" format JSON
+if executable("python")
+  nnoremap <leader>json :%!python -m json.tool<CR>
+  vnoremap <leader>json :'<,'>!python -m json.tool<CR>
+endif
