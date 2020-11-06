@@ -19,6 +19,7 @@ let g:startify_bookmarks = [
     \ { 's': '~/.vim/config/bundle/startify.vim' },
     \ { 'v': '~/.vim/config.vim' },
     \ { 'z': '~/.zshrc' },
+    \ { '*': '~/.config/starship.toml' },
     \ ]
 
 let g:startify_commands = [
