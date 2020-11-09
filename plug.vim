@@ -57,6 +57,7 @@ Plug 'junegunn/goyo.vim',      { 'for': ['markdown', 'asciidoc'] }
 " Plug 'junegunn/limelight.vim', { 'for': ['markdown', 'asciidoc'] }
 
 " ruby
+Plug 'vim-ruby/vim-ruby',   { 'for': 'ruby' }
 Plug 'tpope/vim-bundler',   { 'for': 'ruby' }
 Plug 'tpope/vim-endwise',   { 'for': 'ruby' }
 Plug 'tpope/vim-rails',     { 'for': 'ruby' }
