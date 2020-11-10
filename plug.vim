@@ -62,7 +62,6 @@ Plug 'tpope/vim-bundler',   { 'for': 'ruby' }
 Plug 'tpope/vim-endwise',   { 'for': 'ruby' }
 Plug 'tpope/vim-rails',     { 'for': 'ruby' }
 Plug 'tpope/vim-rake',      { 'for': 'ruby' }
-Plug 'ngmy/vim-rubocop',    { 'for': 'ruby' }
 Plug 'noprompt/vim-yardoc', { 'for': 'ruby' }
 Plug 'kana/vim-textobj-user' | Plug 'nelstrom/vim-textobj-rubyblock'
 
