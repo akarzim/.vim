@@ -16,4 +16,19 @@ let g:neomake_warning_sign = { 'text': '◇', 'texthl': 'GruvboxYellowSign' }
 let g:neomake_info_sign =    { 'text': '◎', 'texthl': 'GruvboxBlueSign' }
 let g:neomake_message_sign = { 'text': '○', 'texthl': 'GruvboxPurpleSign' }
 
-autocmd! BufWritePost * Neomake
+function! NeoOnBattery()
+  if has('macunix')
+    return match(system('pmset -g batt'), "Now drawing from 'Battery Power'") != -1
+  elseif has('unix')
+    return readfile('/sys/class/power_supply/AC/online') == ['0']
+  endif
+  return 0
+endfunction
+
+if NeoOnBattery()
+  " When writing a buffer (no delay).
+  call neomake#configure#automake('w')
+else
+  " When reading a buffer (after 750ms), and when writing (no delay).
+  call neomake#configure#automake('nw', 750)
+endif
