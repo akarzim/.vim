@@ -1,7 +1,8 @@
 " let g:neomake_logfile = '/tmp/neomake.log'
 
-let g:neomake_javascript_eslint_maker = { 'exe': '/Users/fvantomme/.nvm/versions/node/v13.1.0/bin/eslint' }
-let g:neomake_javascript_jshint_maker = { 'exe': '/Users/fvantomme/.nvm/versions/node/v13.1.0/bin/jshint' }
+let g:neomake_javascript_eslint_exe = '/Users/fvantomme/.nvm/versions/node/v13.1.0/bin/eslint'
+let g:neomake_javascript_jshint_exe = '/Users/fvantomme/.nvm/versions/node/v13.1.0/bin/jshint'
+" let g:neomake_ruby_rubocop_exe = '/Users/fvantomme/dev'
 
 " let g:neomake_coffee_enabled_makers     = ['coffeelint']
 " let g:neomake_scss_enabled_makers       = ['sasslint', 'scsslint']
