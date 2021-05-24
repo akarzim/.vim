@@ -59,11 +59,11 @@ Plug 'junegunn/goyo.vim',      { 'for': ['markdown', 'asciidoc'] }
 " ruby
 Plug 'kana/vim-textobj-user' | Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'noprompt/vim-yardoc', { 'for': 'ruby' }
-Plug 'tpope/vim-bundler',   { 'for': 'ruby' }
+" Plug 'vim-ruby/vim-ruby',   { 'for': 'ruby' }
+Plug 'tpope/vim-bundler',   { 'for': ['ruby', 'gemfile', 'gemfilelock'] }
 Plug 'tpope/vim-endwise',   { 'for': 'ruby' }
 Plug 'tpope/vim-rails',     { 'for': 'ruby' }
 Plug 'tpope/vim-rake',      { 'for': 'ruby' }
-Plug 'vim-ruby/vim-ruby',   { 'for': 'ruby' }
 
 " gpg
 Plug 'akarzim/vim-decode-qp', { 'for': 'asc' }
