@@ -18,3 +18,23 @@ nmap <Down> j
 
 " remap caret deadkey to tick
 nmap ' ^
+
+" location list
+nnoremap <Leader>lO :lolder<Return>
+nnoremap <Leader>lo :lopen<Return>
+nnoremap <Leader>lf :lfirst<Return>
+nnoremap <Leader>lp :lprevious<Return>
+nnoremap <Leader>ln :lnext<Return>
+nnoremap <Leader>ll :llast<Return>
+nnoremap <Leader>lc :lclose<Return>
+nnoremap <Leader>lN :lnewer<Return>
+
+" quickfix list
+nnoremap <Leader>cO :colder<Return>
+nnoremap <Leader>co :copen<Return>
+nnoremap <Leader>cf :cfirst<Return>
+nnoremap <Leader>cp :cprevious<Return>
+nnoremap <Leader>cn :cnext<Return>
+nnoremap <Leader>cl :clast<Return>
+nnoremap <Leader>cc :cclose<Return>
+nnoremap <Leader>cN :cnewer<Return>
